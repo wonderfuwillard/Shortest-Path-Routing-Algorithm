@@ -1,16 +1,18 @@
-# Shortest-Path-Routing-Algorithm
-Implement a shortest path routing algorithm.
-
 use make command to compile the program.
 
-to run server, call: ./server <req_code>
-<req_code> can be any integer, client will use the req_code to connect.
+to run router call: router <router_id> <nse_host> <nse_port> <router_port>
+· <router_id> is an integer that represents the router id. It should be unique for each router.
+· <nse_host> is the host where the Network State Emulator is running.
+· <nse_port> is the port number of the Network State Emulator.
+· <router_port> is the router port
 
 
-to run client, call: ./client <server_address> <n_port> <req_code> <input_string>
-server will print the <n_port> after run.
-the <req_code> must same as the server.
+Network State Emulator (nse): nse <routers_host> <nse_port>
+· <routers_host> is the host where the routers are running. For simplicity we suppose that all
+routers are running on the same host.
+· <nse_port> is the Network State Emulator port number.
 
+build and test on linux.student.cs.uwaterloo.ca
 
 GNU Make 3.81
 javac 1.8.0_91
