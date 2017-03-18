@@ -16,12 +16,12 @@ GNU Make 3.81
 javac 1.8.0_91
 
 
-##Example Execution (with 5 routers)
-###On the host hostX
+## Example Execution (with 5 routers)
+### On the host hostX
 ```
 nse hostY 9999
 ```
-###On the host hostY
+### On the host hostY
 ```
 router 1 hostX 9999 9991
 router 2 hostX 9999 9992
